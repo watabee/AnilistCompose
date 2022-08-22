@@ -1,0 +1,17 @@
+plugins {
+    id "anilist.android.library"
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+dependencies {
+    implementation libs.okhttp
+    debugImplementation libs.okhttp.logging
+
+    implementation libs.coil.kt
+
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+
+    implementation libs.timber
+}
