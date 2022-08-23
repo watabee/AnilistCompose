@@ -1,7 +1,8 @@
 plugins {
-    id "anilist.android.library"
-    id "anilist.android.library.compose"
-    id "anilist.android.feature"
+    id 'anilist.android.library'
+    id 'anilist.android.library.compose'
+    id 'anilist.android.feature'
+    id 'anilist.spotless'
 }
 
 dependencies {

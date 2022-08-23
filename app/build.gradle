@@ -1,6 +1,7 @@
 plugins {
-    id "anilist.android.application"
-    id "anilist.android.application.compose"
+    id 'anilist.android.application'
+    id 'anilist.android.application.compose'
+    id 'anilist.spotless'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
 }

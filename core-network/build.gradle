@@ -1,5 +1,6 @@
 plugins {
-    id "anilist.android.library"
+    id 'anilist.android.library'
+    id 'anilist.spotless'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'com.apollographql.apollo3'

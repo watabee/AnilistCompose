@@ -12,6 +12,7 @@ java {
 dependencies {
     implementation(libs.android.gradlePlugin)
     implementation(libs.kotlin.gradlePlugin)
+    implementation(libs.spotless.gradlePlugin)
 }
 
 gradlePlugin {
@@ -35,6 +36,10 @@ gradlePlugin {
         register("androidFeature") {
             id = "anilist.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
+        }
+        register("spotless") {
+            id = "anilist.spotless"
+            implementationClass = "SpotlessConventionPlugin"
         }
     }
 }
