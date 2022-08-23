@@ -1,0 +1,11 @@
+plugins {
+    id "anilist.android.library"
+    id "anilist.android.library.compose"
+    id "anilist.android.feature"
+}
+
+dependencies {
+    implementation projects.coreData
+
+    implementation libs.timber
+}

@@ -1,0 +1,17 @@
+plugins {
+    id "anilist.android.library"
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+dependencies {
+    implementation projects.coreNetwork
+    api projects.coreModel
+
+    implementation libs.apollo.api
+
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+
+    implementation libs.timber
+}

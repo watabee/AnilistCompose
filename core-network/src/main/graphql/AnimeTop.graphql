@@ -1,0 +1,50 @@
+query AnimeTop($season: MediaSeason!, $seasonYear: Int!, $nextSeason: MediaSeason!, $nextSeasonYear: Int!) {
+    trending: Page(page: 1, perPage: 6) @nonnull {
+        media(sort: TRENDING_DESC, type: ANIME, isAdult: false) @nonnull {
+            ...media
+        }
+    }
+    season: Page(page: 1, perPage: 6) @nonnull {
+        media(season: $season, seasonYear: $seasonYear, sort: POPULARITY_DESC, type: ANIME, isAdult: false) @nonnull {
+            ...media
+        }
+    }
+    nextSeason: Page(page: 1, perPage: 6) @nonnull {
+        media(season: $nextSeason, seasonYear: $nextSeasonYear, sort: POPULARITY_DESC, type: ANIME, isAdult: false) @nonnull {
+            ...media
+        }
+    }
+    popular: Page(page: 1, perPage: 6) @nonnull {
+        media(sort: POPULARITY_DESC, type: ANIME, isAdult: false) @nonnull {
+            ...media
+        }
+    }
+    top: Page(page: 1, perPage: 10) @nonnull {
+        media(sort: SCORE_DESC, type: ANIME, isAdult: false) @nonnull {
+            ...media
+        }
+    }
+}
+
+fragment media on Media {
+    id
+    title {
+        userPreferred
+    }
+    coverImage {
+        extraLarge
+        large
+        color
+    }
+    format
+    genres
+    studios(isMain: true) {
+        edges {
+            isMain
+            node {
+                id
+                name
+            }
+        }
+    }
+}

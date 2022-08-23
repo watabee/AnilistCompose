@@ -1,4 +1,4 @@
-package com.github.watabee.anilist.di
+package com.github.watabee.anilist.core.network.di
 
 import android.content.Context
 import coil.ImageLoader

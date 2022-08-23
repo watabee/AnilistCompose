@@ -1,4 +1,4 @@
-package com.github.watabee.anilist.ui
+package com.github.watabee.anilist.core.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 

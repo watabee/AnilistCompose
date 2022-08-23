@@ -32,5 +32,9 @@ gradlePlugin {
             id = "anilist.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
+        register("androidFeature") {
+            id = "anilist.android.feature"
+            implementationClass = "AndroidFeatureConventionPlugin"
+        }
     }
 }

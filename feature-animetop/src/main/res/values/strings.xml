@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_animetop_header_trending">TRENDING NOW</string>
+    <string name="feature_animetop_header_season">POPULAR THIS SEASON</string>
+    <string name="feature_animetop_header_next_season">UPCOMING NEXT SEASON</string>
+    <string name="feature_animetop_header_popular">ALL TIME POPULAR</string>
+    <string name="feature_animetop_header_top">TOP 100 ANIME</string>
+
+    <string name="feature_animetop_retry_button_title">Retry</string>
+</resources>

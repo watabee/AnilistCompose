@@ -1,0 +1,11 @@
+plugins {
+    id "anilist.android.library"
+    id "anilist.android.library.compose"
+}
+
+dependencies {
+    api libs.androidx.compose.foundation
+    debugApi libs.androidx.compose.ui.tooling
+    api libs.androidx.compose.ui.tooling.preview
+    api libs.androidx.compose.material
+}

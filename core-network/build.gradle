@@ -2,11 +2,14 @@ plugins {
     id "anilist.android.library"
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id 'com.apollographql.apollo3'
 }
 
 dependencies {
     implementation libs.okhttp
     debugImplementation libs.okhttp.logging
+
+    implementation libs.apollo.runtime
 
     implementation libs.coil.kt
 
@@ -14,4 +17,8 @@ dependencies {
     kapt libs.hilt.compiler
 
     implementation libs.timber
+}
+
+apollo {
+    packageName.set("com.github.watabee.anilist.core.network")
 }
