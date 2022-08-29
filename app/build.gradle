@@ -44,6 +44,9 @@ android {
 
 dependencies {
     implementation projects.coreDesignsystem
+    implementation projects.coreModel
+    implementation projects.coreNavigation
+    implementation projects.featureAnimelist
     implementation projects.featureAnimetop
 
     implementation libs.androidx.activity.compose

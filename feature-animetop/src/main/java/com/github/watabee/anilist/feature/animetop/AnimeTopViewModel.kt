@@ -18,6 +18,9 @@ class AnimeTopViewModel @Inject constructor(private val animeRepository: AnimeRe
         private set
 
     fun getAnimeTop() {
+        if (animeTopUiState is AnimeTopUiState.Success) {
+            return
+        }
         viewModelScope.launch {
             animeTopUiState = AnimeTopUiState.Loading
             animeTopUiState = try {

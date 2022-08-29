@@ -10,5 +10,7 @@ dependencies {
     implementation projects.coreNavigation
     implementation projects.coreUi
 
+    implementation libs.androidx.paging.compose
+
     implementation libs.timber
 }

@@ -1,0 +1,33 @@
+query AnimeList($page: Int!, $perPage: Int!, $season: MediaSeason, $seasonYear: Int, $sort: [MediaSort]) {
+    page: Page(page: $page, perPage: $perPage) @nonnull {
+        pageInfo @nonnull {
+            total @nonnull
+            perPage @nonnull
+            currentPage @nonnull
+            lastPage @nonnull
+            hasNextPage @nonnull
+        }
+        media(type: ANIME, season: $season, seasonYear: $seasonYear, sort: $sort, isAdult: false) @nonnull {
+            id
+            title {
+                userPreferred
+            }
+            coverImage {
+                large
+            }
+            format
+            episodes
+            duration
+            genres
+            studios(isMain: true) {
+                edges {
+                    isMain
+                    node {
+                        id
+                        name
+                    }
+                }
+            }
+        }
+    }
+}

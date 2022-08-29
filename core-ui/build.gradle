@@ -1,0 +1,19 @@
+plugins {
+    id 'anilist.android.library'
+    id 'anilist.android.library.compose'
+    id 'anilist.spotless'
+}
+
+dependencies {
+    implementation projects.coreDesignsystem
+
+    api libs.androidx.compose.foundation
+    api libs.androidx.compose.material
+    debugApi libs.androidx.compose.ui.tooling
+    api libs.androidx.compose.ui.tooling.preview
+    api libs.androidx.compose.runtime
+
+    api libs.androidx.paging.compose
+
+    api libs.coil.kt.compose
+}

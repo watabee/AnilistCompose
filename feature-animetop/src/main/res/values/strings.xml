@@ -6,5 +6,5 @@
     <string name="feature_animetop_header_popular">ALL TIME POPULAR</string>
     <string name="feature_animetop_header_top">TOP 100 ANIME</string>
 
-    <string name="feature_animetop_retry_button_title">Retry</string>
+    <string name="feature_animetop_view_all_button_title">View All</string>
 </resources>

@@ -1,0 +1,4 @@
+plugins {
+    id 'anilist.android.library'
+    id 'anilist.spotless'
+}
